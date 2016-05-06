@@ -10,7 +10,7 @@
 
 %opening
 \title{Clarification and Errata to \\\textit{Catastrophe Modeling: \\A New Approach to Managing Risk} \\(Grossi, P. and Kunreuther, H., Editors)}
-\author{Casualty Actuarial Society Syllabus Committee \thanks{Prepared by Rajesh Sahasrabuddhe, FCAS, MAAA, CAS Syllabus Committee Chairperson} } %\\with assistance from Dave Clark, FCAS, MAAA}
+\author{Casualty Actuarial Society Syllabus Committee \thanks{This note was originally prepared by Rajesh Sahasrabuddhe, FCAS, MAAA, CAS Syllabus Committee Chairperson in 2013. It has been revised based on simmilar comments provided contemporaneously by Josh Taub, FCAS and Matthew M. Iseler, FCAS.} } %\\with assistance from Dave Clark, FCAS, MAAA}
 
 
 \begin{document}
@@ -33,26 +33,29 @@ For actuaries who have not worked with catastrophe models, the OEP may be a new 
 
 \section{Errata}
 \begin{itemize}
+	\item The end continued paragraph at the top of page 30 is corrected as follows:\\
+	A list of \color{red} \sout{15} 14\color{black}\footnote{Editor's note: Event 15 in Table 2.1 does not include ``damage to a portfolio of structures'' and is therefore not consistent with the definition of $E_i$.} is listed in Table 2.1 ranked in descending order of the amount of loss. \color{red} \sout{In order to keep the example simple and the calculations straightforward, these events were chosen so the set is exhaustive (i.e., sum of probabilities for all events equals one)}.\color{black}
+	
 \item The first complete paragraph on page 30 is corrected as follows:\\
 \\
-The events listed in Table 2.1 are assumed to be independent Bernoulli random variables \color{red} .\sout{, each with a}.  It is assumed that each event only occurs once with \color{red} the \color{black} probability mass function defined as: \ldots   
+The events listed in Table 2.1 are assumed to be independent Bernoulli random variables \color{red} .\sout{, each with a}.  It is assumed that each event only occurs at most once with \color{red} the \color{black} probability mass function defined as: \ldots   
 
 \item The second complete paragraph on page 30 is corrected as follows:\\
 \\
 If an event $E_i$ does not occur, the loss \color{red} for that event \color{black} is 0. \ldots 
 
-\item The third complete paragraph on page 30 is corrected as follows:\\
-\\
-The \color{red} \sout{overall expected loss} average size of an individual loss \sout{for the entire series of events}\color{black}, denoted as the \color{red} \sout{average annual loss (AAL)}Average Loss Event ($ALE$) \color{black} in Table 2.1, is the sum of expected losses \color{red} \sout{of} for \color{black} each of the individual events for a given year and is given by:\\
-\begin{equation*}
- \color{red}ALE \color{black} = \sum_i p_i \times L_i  \\
-\end{equation*}
-\color{red} Note: Candidates should review the definition of average annual loss (AAL) in the Glossary as this term is used in other sections of this material.
+%\item The third complete paragraph on page 30 is corrected as follows:\\
+%\\
+%The \color{red} \sout{overall expected loss} average size of an individual loss \sout{for the entire series of events}\color{black}, denoted as the \color{red} \sout{average annual loss (AAL)}Average Loss Event ($ALE$) \color{black} in Table 2.1, is the sum of expected losses \color{red} \sout{of} for \color{black} each of the individual events for a given year and is given by:\\
+%\begin{equation*}
+% \color{red}ALE \color{black} = \sum_i p_i \times L_i  \\
+%\end{equation*}
+%\color{red} Note: Candidates should review the definition of average annual loss (AAL) in the Glossary as this term is used in other sections of this material.
 \color{black}
 
 \item The fourth complete paragraph on page 30 is corrected as follows:\\
 \\
-Assuming that during a given year, only one \color{red} of each \color{black} disaster occurs, the \color{red} $OEP$  \sout{exceedance probability} \color{black} for a given level of loss, $\color{red}O \color{black}EP(L_i)$, can be determined by calculating: \ldots
+Assuming that during a given year, at most only one \color{red} of each \color{black} disaster occurs, the \color{red} $OEP$  \sout{exceedance probability} \color{black} for a given level of loss, $\color{red}O \color{black}EP(L_i)$, can be determined by calculating: \ldots
 \item The first sentence of the fifth complete paragraph on page 30 is corrected as follows:\\
 \\
 The resulting \color{red} $OEP$ is the probability that at least one loss exceeds a given value  \sout{exceedance probability is the annual probability that the loss exceeds a given value}\color{black}.
@@ -98,9 +101,9 @@ Event & \multicolumn{1}{c}{Occurrence} & \multicolumn{1}{c}{Loss}
     12    & 0.100 &                300,000  & 0.3490 &            30,000  \\
     13    & 0.100 &                200,000  & 0.4141 &            20,000  \\
     14    & 0.100 &                100,000  & 0.4727 &            10,000  \\
-    15    & 0.283 &                            0    & 0.5255 &                     0    \\
+    %\sout{15}    & \sout{0.283} &                            \sout{0}    & \sout{0.5255} &                     \sout{0}    \\
      \midrule
-    Total & 1.000 & \multicolumn{2}{r}{Average Loss Event} &          760,000  \\
+    Total &  & \multicolumn{2}{r}{Average Annual Loss (AAL)} &          760,000  \\
     \bottomrule
     \end{tabular}%
   \label{tab:addlabel}%
